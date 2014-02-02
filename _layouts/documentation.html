@@ -1,14 +1,14 @@
 {% include header.html %}
 <div class="documentation prose">
     <div class="row">
-      {% if page.submenu %}
+      {% if page.sidemenu %}
 
         <div class="col-md-3">
           {% include doc-sidebar.html %}
-          {% include edit-button.html %}
         </div>
 
         <div class="col-md-9" role="main">
+          {% include edit-button.html %}
             {% include doc-header.html %}
           {{ content }}
         </div>
