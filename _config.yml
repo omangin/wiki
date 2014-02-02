@@ -40,6 +40,30 @@ prose:
     - README.md
     - style.css
   metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "documentation"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "getting-started"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Document title"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+      - name: "sidemenu"
+        field:
+          element: "textarea"
+          label: "Side menu items"
+          value: ""
     _posts/updates:
       - name: "layout"
         field:
