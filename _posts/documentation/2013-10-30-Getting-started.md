@@ -2,7 +2,7 @@
 layout: documentation
 category: documentation
 title: Start Up <em>Guide</em>
-author: mlapeyre
+author: matthieulapeyre
 submenu:
     betatest: Beta Test
     repository: Repository Access
