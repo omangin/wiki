@@ -23,7 +23,12 @@ baseurl: /wiki
 # permalink: pretty
 permalink: /:categories/:title
 markdown: rdiscount
-ignore:
+
+prose:
+  siteurl: 'http://poppy-project.github.io/wiki/'
+  relativeLinks: 'http://poppy-project.github.io/wiki/links.jsonp'
+  media: 'media'
+  ignore:
     - /_includes
     - /_layouts
     - /_site
@@ -34,10 +39,6 @@ ignore:
     - links.jsonp
     - README.md
     - style.css
-prose:
-  siteurl: 'http://poppy-project.github.io/wiki/'
-  relativeLinks: 'http://poppy-project.github.io/wiki/links.jsonp'
-  media: 'media'
   metadata:
     _posts/updates:
       - name: "layout"
@@ -89,7 +90,7 @@ prose:
       - name: "sidemenu"
         field:
           element: "textarea"
-          label: "Title"
+          label: "Side menu items"
           value: ""
     _posts/tutorial:
       - name: "layout"
@@ -113,5 +114,5 @@ prose:
       - name: "sidemenu"
         field:
           element: "textarea"
-          label: "Title"
+          label: "Side menu items"
           value: ""
