@@ -1,8 +1,8 @@
 <div class="docs-sidebar-menu affix" >
-    {% if page.submenu %}
+    {% if page.sidemenu %}
 
           <ul class="nav nav-list nav-stacked" >
-              {% for item in page.submenu %}
+              {% for item in page.sidemenu %}
                   <li><a href="#{{ item[0] }}">{{ item[1] }}</a></li>
               {% endfor %}
         </ul>
