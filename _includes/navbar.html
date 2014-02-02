@@ -1,0 +1,35 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{site.baseurl}}/"> Poppy <em>Makers</em></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li class='{% if page.url == "/" %}active{% endif %}'><a href="{{site.baseurl}}/">Home</a></li>
+        <li class='{% if page.category == "documentation" %}active{% endif %} dropdown'>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% for post in site.categories.documentation reversed %}
+            <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class='{% if page.category == "tutorial" %}active{% endif %} dropdown'>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% for post in site.categories.tutorial reversed %}
+            <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li><a href="https://poppy-project-forum.bordeaux.inria.fr/">Forum</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

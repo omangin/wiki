@@ -1,8 +1,12 @@
+name: Poppy project wiki
+
 baseurl: /wiki
 permalink: pretty
+# permalink: /:categories/:title.
 markdown: rdiscount
+categories:
+
 prose:
-  rooturl: '_posts'
   siteurl: 'http://poppy-project.github.io/wiki/'
   relativeLinks: 'http://poppy-project.github.io/wiki/links.jsonp'
   media: 'media'

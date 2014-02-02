@@ -1,0 +1,139 @@
+
+/* General style*/
+
+body {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+h1,h2,h3,h4 {
+    font-weight: bolder;
+    text-align: center;
+}
+h1>em,h2>em,h3>em, h4>em{
+    font-weight: 100;
+    font-style: normal;
+}
+
+.rss {
+  text-align: right;
+}
+/*h1,h2,h3 {
+    text-transform: uppercase;
+}*/
+
+.alert {
+  font-size: 16px;
+}
+
+/*Brand Typo*/
+.navbar-brand{
+    /*font-weight: 600;*/
+    /*text-transform: uppercase;*/
+    font-family: inherit;
+}
+/*Allows to use emphasis in page title*/
+.navbar-brand>em, .dropdown-menu>li>a>em{
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+
+
+/* Documentation style*/
+
+@media (max-width: 992px) {
+  .nav-stacked {
+    display: none;
+  }
+}
+
+.documentation h1,h2{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.big-title {
+  /*padding-bottom: 30px;*/
+  /*margin: 60px 0 20px;*/
+  /*border-bottom: 1px solid #eee;*/
+}
+
+.doc-header > h1{
+  font-size: 68px;
+  font-weight: normal;
+  height: 88px;
+  line-height: 67.5px;
+  margin-bottom: 10.5px;
+  margin-top: 21px;
+  text-transform: uppercase;
+  width: 700px;
+}
+.doc-header > .jumbotron {
+  padding: 20px 10px;
+}
+
+.doc-header > h1, .jumbotron >h1 {
+  padding: 0px 0px 20px;
+}
+
+.doc-header img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Documentation sidebar style*/
+.docs-sidebar-menu {
+  text-align: right;
+  left: auto;
+}
+
+.nav-stacked {
+  /*max-width: 240px;*/
+  margin-top: 12px;
+}
+.nav-stacked li {
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.nav-stacked li a {
+  color: #bfbfbf;
+  border-right: 2px solid #bfbfbf;
+  text-align: right;
+  padding: 0 16px 0;
+  /*text-transform: uppercase;*/
+}
+.nav-stacked li.active a,
+.nav-stacked li:hover a,
+.nav-stacked li.active:hover a {
+  color: #007196;
+  border-color: #007196;
+  background: none;
+  text-shadow: none;
+}
+
+/* Icons */
+
+.jumbotron>.list-inline{
+  text-align: center;
+}
+.fa{
+  color:#bfbfbf;
+}
+.fa:hover{
+  color: #007196;
+}
+.fa-facebook:hover{color: #3b5998; }
+.fa-twitter:hover{color: #00a0d1; }
+.fa-linkedin:hover{color: #5FB0D5; }
+.fa-github:hover{color:#4183c4;}
+.fa-pinterest:hover{color: #910101; }
+.fa-youtube:hover{color:#c4302b; }
