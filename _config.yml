@@ -7,8 +7,9 @@ authors:
     display_name: Matthieu Lapeyre
     gravatar: ef7c64d1a92babba8d87df3436ecef68
     email: matthieulapeyre@gmail.com
+    website:
     social:
-        github: matthieulapeyre
+        github: matthieu-lapeyre
         linkedin: in/matthieulapeyre
 
 
@@ -19,61 +20,98 @@ authors:
 
 name: Poppy project wiki
 baseurl: /wiki
-permalink: pretty
-# permalink: /:categories/:title.
+# permalink: pretty
+permalink: /:categories/:title
 markdown: rdiscount
-categories:
-
+ignore:
+    - /_includes
+    - /_layouts
+    - /_site
+    - .gitignore
+    - Gemfile
+    - index.md
+    - LICENCE.md
+    - links.jsonp
+    - README.md
+    - style.css
 prose:
   siteurl: 'http://poppy-project.github.io/wiki/'
   relativeLinks: 'http://poppy-project.github.io/wiki/links.jsonp'
   media: 'media'
   metadata:
-    _posts:
+    _posts/updates:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "update_note"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+      - name: "category"
+        field:
+          element: "select"
+          placeholder: "Choose category"
+          options:
+            - name: "News"
+              value: "news"
+            - name: "Issue"
+              value: "issue"
+            - name: "Bug"
+              value: "bug"
+            - name: "Fix"
+              value: "fix"
+    _posts/documentation:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "documentation"
       - name: "category"
         field:
           element: "hidden"
-          value: "blog"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
+          value: "documentation"
       - name: "title"
         field:
           element: "text"
-          label: "Title"
+          label: "Document title"
           value: ""
-      - name: "splash"
+      - name: "author"
         field:
           element: "text"
-          label: "Splash image"
+          label: "Author"
           value: ""
-      - name: "tags"
+      - name: "sidemenu"
         field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
-    _posts/static:
+          element: "textarea"
+          label: "Title"
+          value: ""
+    _posts/tutorial:
       - name: "layout"
         field:
           element: "hidden"
-          value: "page"
+          value: "documentation"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "tutorial"
       - name: "title"
         field:
           element: "text"
-          label: "Title"
+          label: "Document title"
           value: ""
-      - name: "permalink"
+      - name: "author"
         field:
           element: "text"
-          label: "Permalink"
+          label: "Author"
+          value: ""
+      - name: "sidemenu"
+        field:
+          element: "textarea"
+          label: "Title"
           value: ""
