@@ -1,0 +1,28 @@
+{% include header.html %}
+<div class="documentation prose">
+    <div class="row">
+      {% if page.submenu %}
+
+        <div class="col-md-3">
+          {% include doc-sidebar.html %}
+          {% include edit-button.html %}
+        </div>
+
+        <div class="col-md-9" role="main">
+            {% include doc-header.html %}
+          {{ content }}
+        </div>
+
+      {% else %}
+
+        <div class="col-md-10 col-md-offset-1" role="main">
+            {% include edit-button.html %}
+            {% include doc-header.html %}
+          {{ content }}
+        </div>
+
+      {% endif%}
+
+    </div>
+</div>
+{% include footer.html %}

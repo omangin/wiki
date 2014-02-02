@@ -1,7 +1,7 @@
 ---
 published: true
 author: matthieulapeyre
-layout: default
+layout: documentation
 category: documentation
 ---
 

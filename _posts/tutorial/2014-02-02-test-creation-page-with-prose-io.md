@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 category: tutorial
 published: true
 author: matthieulapeyre
