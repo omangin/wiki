@@ -3,7 +3,7 @@ layout: documentation
 category: documentation
 title: Start Up <em>Guide</em>
 author: matthieulapeyre
-submenu:
+sidemenu:
     betatest: Beta Test
     repository: Repository Access
     components: Component list
