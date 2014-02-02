@@ -1,0 +1,20 @@
+<div class="doc-header heading">
+    {% if page.author %}
+        <div class="jumbotron" >
+            <h1> {{page.title}} </h1>
+                    {% assign author = site.authors[page.author] %}
+                    <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=100" />
+                    <h4>  <em>Document written by</em> {{ author.display_name }}</h4>
+                    <ul class="list-inline">
+                        {% for ref in author.social %}
+                            <li> <a href="http://www.{{ref.[0]}}.com/{{ref.[1]}}" target="_blank"> <i class="fa fa-{{ref.[0]}} fa-lg"></i></a> </li>
+                        {% endfor%}
+                    </ul>
+        </div>
+
+   {% else %}
+
+        <h1> {{page.title}} </h1>
+
+    {% endif %}
+</div>

@@ -1,5 +1,23 @@
-name: Poppy project wiki
+##############################################
+# Authors Section
+# Append your information here:
+##############################################
+authors:
+  matthieulapeyre:
+    display_name: Matthieu Lapeyre
+    gravatar: ef7c64d1a92babba8d87df3436ecef68
+    email: matthieulapeyre@gmail.com
+    social:
+        github: matthieulapeyre
+        linkedin: in/matthieulapeyre
 
+
+##############################################
+# Wiki configuration
+# DO NOT TOUCH !
+##############################################
+
+name: Poppy project wiki
 baseurl: /wiki
 permalink: pretty
 # permalink: /:categories/:title.

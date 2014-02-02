@@ -1,8 +1,8 @@
 ---
-layout: blog
-category: blog
-published: false
-title: Test creation page with prose.io
+layout: default
+category: tutorial
+published: true
+author: matthieulapeyre
 ---
 
 ## A New Post
