@@ -39,13 +39,13 @@ prose:
     - /_includes
     - /_layouts
     - /_site
+    - /assets
     - .gitignore
     - Gemfile
     - index.md
     - LICENCE.md
     - links.jsonp
     - README.md
-    - style.css
   metadata:
     _posts:
       - name: "layout"
