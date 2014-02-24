@@ -50,10 +50,10 @@ The source code used with Poppy can be found on a public bitbucket repository. T
 ## III. Component _list_
 [Here](https://docs.google.com/spreadsheet/ccc?key=0Avq9MlqcWxlNdGpjY1RwbDMtSDJJSlVpM1VhRkVLVUE&amp;usp=sharing) is the list of all components needed to build a Poppy :
 
-- http://www.poppy-project.org/wp-content/uploads/data/3Dprint.csv
-- http://www.tablesgenerator.com/markdown_tables
-- http://www.poppy-project.org/wp-content/uploads/data/electronics.csv
-- http://www.poppy-project.org/wp-content/uploads/data/mounting_tools.csv
+- [www.poppy-project.org/wp-content/uploads/data/3Dprint.csv](http://www.poppy-project.org/wp-content/uploads/data/3Dprint.csv)
+- [www.tablesgenerator.com/markdown_tables](http://www.tablesgenerator.com/markdown_tables)
+- [www.poppy-project.org/wp-content/uploads/data/electronics.csv](http://www.poppy-project.org/wp-content/uploads/data/electronics.csv)
+- [www.poppy-project.org/wp-content/uploads/data/mounting_tools.csv](http://www.poppy-project.org/wp-content/uploads/data/mounting_tools.csv)
 
 <div class="alert alert-info">
 + Shoes! You have to find baby shoes in a local store. The poppy feet should fit the size 21EU/12cm.</div>
